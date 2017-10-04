@@ -1,0 +1,66 @@
+
+.color{
+  font-size: 12px ;
+  color: blue;
+}
+a:hover{
+  color:green;
+  font-style: bold;
+}
+p:nth-child(even){
+  color: #BECC2C;
+}
+h2{
+  color:#67815D;
+  font-weight: bold;
+}
+nav>h2{
+  color:#AE5173;
+  font-style: italic;
+}
+img+h3{
+  color:green;
+  text-transform: capitalize;
+}
+#importante{
+  color:#FF1144;
+  font-weight: bold;
+}
+footer h2{
+  color:#FFFF88;
+}
+p::first-letter{
+  color:red;
+}
+
+p::first-line{
+  color:#88AACC;
+}
+a:visited{
+  color:#FF1144;
+}
+a::selection{
+  font-weight: bold;
+}
+ul li a:valid{
+  color:purple;
+}
+*{
+  font-family: courier;
+}
+p:nth-last-child(2) {
+    background: #CCFFEE;
+}
+
+p:nth-of-type(2) {
+    background: #11B8A6;
+}
+
+h3:target {
+
+    background-color: #e5eecc;
+}
+
+h2:last-of-type {
+    background: #BBCC33;
+}
