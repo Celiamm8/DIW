@@ -1,0 +1,44 @@
+#cabecera{
+  padding: 1em;
+}
+
+#menu{
+  margin-bottom: 0.5em
+  padding: 0.5em
+}
+
+#noticia #patrocinadores #principal #secundario{
+  padding: 0.5em;
+}
+#pie{
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  margin-top: 1em;
+  border-top: 1px;
+  border-bottom: 1px;
+  color: #C5C5C5;
+}
+.articulo{
+  margin: 1em;
+}
+img{
+  margin: 0.5em;
+}
+#patrocinadores{
+  margin-top: 1em;
+  border: 1px dashed #CC6600;
+}
+#cabecera,#menu,#lateral,#contenido,#contenido #principal,#contenido #secundario,#pie{
+  border: none;
+}
+#menu{
+  border-bottom: 1px #004C99;
+
+}
+#noticias{
+  border: 1px;
+  color: #C5C5C5;
+}
+#secundario{
+  border-top: 1px #CC6600;
+}

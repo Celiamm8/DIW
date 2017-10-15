@@ -1,0 +1,81 @@
+*{
+  color:blue;
+  font-family: verdana;
+  font-size: 0.9em;
+  margin:1.4em;
+
+}
+body{
+background: #FFF url("http://www.webdesignhot.com/wp-content/uploads/2014/07/Blue-Abstract-Design-Art-Background-Vector-Illustration.jpg") ;
+}
+h1{
+  border-color: black;
+  color:white;
+  align: center;
+  text-transform: capitalize;
+  border-radius: 1px;
+  padding: 10px;
+  word-spacing: 80px;
+  background:url("https://1.bp.blogspot.com/_sD9yQTE5QZQ/SGvRFJbT6QI/AAAAAAAADg4/5Ot2-aTA4_w/s400/blue1961.jpg.")
+
+}
+p{
+  text-indent: 1cm;
+}
+
+a{
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration: underline;
+
+}
+
+a { margin: 1em 0;
+  float: left;
+  clear: left;
+
+}
+td{
+  text-align: center;
+
+}
+
+tr:nth-child(even){
+  background:grey ;
+}
+ .pdf{
+   color: #E37529;
+     padding: 0 0 0 40px;
+     background-image: url("http://www.zamzar.com/images/filetypes/pdf.png");
+     background-repeat: no-repeat;
+     background-size: 30px ;
+     height: 30px;
+}
+.css{
+  color: white;
+  padding: 0 0 0 70px;
+  background-repeat: no-repeat;
+    background-size: 50px ;
+    height: 50px;
+  background-image:url("http://opencode.us/wp-content/uploads/2013/10/css3_logo.png");
+}
+.html{
+
+  color: white;
+  padding: 0 0 0 70px;
+  background-repeat: no-repeat;
+    background-size: 50px ;
+    height: 50px;
+  background-image: url("http://ecx.images-amazon.com/images/I/41KcvYbAEOL.png");
+}
+caption{
+  font-size: 10px;
+  font-style: italic;
+  caption-side: bottom;
+}
+td a:hover{
+  background: yellow;
+
+}
