@@ -1,18 +1,23 @@
 div{
   margin-top: 10px;
+  border-radius: 5px;
+
 
 }
 div label{
   width: 8%;
   float: left;
+
 }
 input[text]{
   padding-left: 0.5em;
+
 
 }
 
 input:focus{
   border:3px solid violet;
+    background: grey;
 }
 input{
     border-radius: 2px;
@@ -21,11 +26,25 @@ input{
 textarea{
     border-radius: 2px;
     overflow:scroll;
-      height: 60px;
+      height: 40px;
+      width: 1000px;
+
 
 }
 p{
   font-style: italic;
   border: 1px solid gray;
+
+}
+#sexo {
+  padding: 40px;
+  margin: 15px;
+  padding-left: 10px;
+
+}
+#sexo2 {
+  padding: 70px;
+  margin: 15px;
+  padding-left: 10px;
 
 }
