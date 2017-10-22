@@ -1,0 +1,62 @@
+
+  ul{
+          list-style: none;
+          background-color: lightgrey;
+          border: 1px solid grey;
+          width: 180px;
+          padding: 0px;
+          margin: 0px;
+          /*border-bottom: 1px solid grey;*/
+        }
+        li{
+          border-top: 1px solid grey;
+          border-bottom: 1px solid grey;
+
+        }
+        li a{
+          text-decoration: none;
+          color: black;
+          padding: 5px 0px 5px 15px;
+          display: block;
+        }
+        li ul{
+          display: none;
+        }
+        li:hover ul{
+          display:block;
+        }
+        a:hover{
+          background-color: grey;
+          color:green;
+        }
+        li:hover{
+          background-color: grey;
+          color:green;
+
+        }
+
+      .fle{
+          border: 1px solid black;
+          list-style: square;
+          width:190px;
+          background-color: lightgrey;
+
+          padding: 5px 10px 5px 40px;
+
+
+        }
+        /*opcional*/
+
+      .imga{
+
+          padding: 5px 10px 5px 40px;
+          background-image: url("http://imageog.flaticon.com/icons/png/512/2/2526.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF");
+          background-repeat: no-repeat;
+          background-size: 30px ;
+          background-position: left;
+          p
+
+          /*height: 30px;*/
+
+
+        }

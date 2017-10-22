@@ -1,0 +1,31 @@
+div{
+  margin-top: 10px;
+
+}
+div label{
+  width: 8%;
+  float: left;
+}
+input[text]{
+  padding-left: 0.5em;
+
+}
+
+input:focus{
+  border:3px solid violet;
+}
+input{
+    border-radius: 2px;
+}
+
+textarea{
+    border-radius: 2px;
+    overflow:scroll;
+      height: 60px;
+
+}
+p{
+  font-style: italic;
+  border: 1px solid gray;
+
+}
