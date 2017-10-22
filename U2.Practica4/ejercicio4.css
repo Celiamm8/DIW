@@ -47,14 +47,14 @@
         }
         /*opcional*/
 
-      .imga{
+      .imga:hover{
 
           padding: 5px 10px 5px 40px;
           background-image: url("http://imageog.flaticon.com/icons/png/512/2/2526.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF");
           background-repeat: no-repeat;
           background-size: 30px ;
           background-position: left;
-          p
+
 
           /*height: 30px;*/
 
