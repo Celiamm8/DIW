@@ -1,0 +1,152 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  width: 960px;
+}
+
+header{
+  width: 100%;
+background-color:lightblue;
+ position: fixed;
+  display: table;
+  padding: 1%; /*10px; */
+}
+ header h1{
+   display: table-cell;
+   text-align: left;
+   vertical-align: middle;
+  font: bold 3,75% Helvetica, sans-serif; /*36px*/
+
+ }
+ img{
+   width: 80px;
+   display: table-cell;
+   padding: 2.08%; /*20px*/
+   vertical-align: middle;
+ }
+
+header  nav{
+   display: table-cell;
+   margin: 10.41%; /*100px*/
+
+
+ }
+header nav li{
+  background: steelblue;
+  display: inline-block;
+  border: 0.10% solid steelblue; /*1px*/
+  padding: 0.72% 0.72% 0.72%  0.72% ; /* 7px 7px 7px 7px;*/
+
+ }
+header a{
+  color:white;
+  text-decoration: none;
+
+}
+
+aside{
+  display: table-cell;
+  padding: 1.04%; /*10px; */
+
+}
+li ul{
+  display: none;
+}
+li:hover ul{
+  display:block;
+
+}
+
+ aside ul{
+   border: 0.10% solid lightgrey;
+   background-color: lightgrey;
+   padding: 0.52%  7.29% 0.52% 7.29%;/*5px 70px 5px 70px;*/
+   margin-right:  220px;
+
+
+ }
+ aside ul li{
+   list-style: none;
+     text-align: left;
+ }
+ aside a{
+   text-decoration: none;
+   color:black;
+   display: block;
+ }
+ .primeraEntrada{
+   margin-top: 16.66% ;/*160px;*/
+
+   border: 2px solid grey;
+   background: linen;
+   margin-left: 90px;
+   padding: 2.08% 2.08% 2.08% 2.08%  /*20px 20px 20px 20px;*/
+
+
+ }
+
+.segundaEntrada{
+  height:  15.62%; /*150px;*/
+  border: 2px solid grey;
+  background: linen;
+  margin-left: 9.37%; /*90px;*/
+  margin-top:  3.12%; /*30px;*/
+  padding:  1.04% 2.08% 1.04% 2.08%;/*10px 20px 10px 20px;*/
+
+
+
+ }
+ figure img{
+   padding-right: 5.20%;/*50px;*/
+   width: 31.25%; /*300px;*/
+   height: 31.25%;/*300px;*/
+ }
+
+   article h1  {
+    font-style: bold;
+    font-size: 2.5%; /*24px;*/
+    margin-left: 1.04%; /*10px;*/
+    margin-top: 1.04%; /*10px;*/
+  }
+  h3{
+    font-style: bold;
+    font-size: 1.875% ;/*18px;*/
+    margin-left: 1.04%; /*10px;*/
+
+  }
+   .r,time{
+    margin-left: 1.04%; /*10px;*/
+
+    color: lightgrey;
+  }
+  p{
+    margin-left:  1.04%; /*10px;*/
+  }
+  section{
+    margin-left: auto;
+    margin-top: auto;
+    display: table;
+    margin-right: auto;
+    width: 100%;
+
+  }
+
+ footer{
+   width: 100%;
+   text-align: center;
+   padding: 10px;
+   display: flex;
+  /*min-height: 100vh;*/
+  flex-direction: column;
+ }
+caption{
+   font-style: italic;
+ }
+ .comentario{
+   color:blue;
+   margin-left: 72.91%; /*700px;*/
+
+ }
