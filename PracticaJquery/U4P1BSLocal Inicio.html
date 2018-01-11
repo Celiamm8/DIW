@@ -20,19 +20,9 @@
 
     <!--Estilo para los Sprites de los titulares-->
     <link rel="stylesheet" href="estiloSprite.css">
-    <!-- link para los iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript">
-     function mute(){
-       var sonido = document.getElementById('player').muted;
-       if (sonido === true){
-         document.getElementById('player').muted = false;
-       }else{
-         document.getElementById('player').muted = true;
-       }
-     }
-   </script>
 
+    <!-- Enlace a font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       /* Estilos base de la página */
       body{
@@ -70,15 +60,67 @@
         display: block;
         width: 100%
       }
-      a i{
-         border-radius: 20px;
+      /* Aquí empieza el estilo de Font-icons del pie */
+      footer ul li {
+          list-style-type: none;
+          display: inline-block;
+      }
+      footer ul li a i {
+        background: #205D7A;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 15%;
+        transition: all 0.2s ease-in-out;
+      }
+      i.fa{
+        font-size: 1.2rem;
+      }
+      .fa-facebook {
+	       background:#3b5998
        }
-       video{
-       width:100%;
-       height: auto;
+      .fa-linkedin {
+	        background:#007bb6
+      }
+      .fa-twitter {
+	        background:#00aced
+       }
+      .fa-google-plus {
+	        background:#dd4b39
+      }
+      footer ul li a i:hover {
+        background: white;
+        color: black;
+      } /* Hasta aquí el estilo de Font-icons del pie */
+      /*Estilo para las imágenes*/
+      article figure img{
+        width: 25%;
+        height: auto;
+        margin-left: 30px;
+      }
+      input{
+          transform: scale(1.1);
+      }
+      footer ul li a i:hover{
+          transition: all 5s;
+          border-radius: 5%;
+          color: green;
+          background: blue;
 
-     }
-
+      }
+      @keyframes iconos {
+        25%  {background-color: lightpink; margin-left: 500px;}
+        50%  {background-color: lightblue; margin-left: 500px;}
+        100% {background-color: lightgreen; margin-left:10px;}
+      }
+      img{
+        animation-name: iconos;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+      }
 
     </style>
 </head>
@@ -147,38 +189,26 @@
                   <section class="row">
                     <article>
                       <h1><i class="icon-novedades"></i>Novedades</h1>
-                      <p>Conoce la nueva emisora de nuestro instituto en la que podrás solicitar temas como el siguiente:</p>
-                      <div>
-                         <audio  controls="controls"  preload="auto">
-                           <source src="bebe.ogg" type="audio/ogg">
-
-                            <source src="bebe.mp3" type="audio/mpeg"/>
-
-                         </audio>
-
-                      </div>
-                      <p>Si lo prefieres, sigue nuestro canal de Youtube donde emitiremos cada semana, el video del tema más demandado. El video de esta semana es el siguiente:
+                      <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper mauris nisl, ac euismod erat dictum
+                          vel. Nunc lobortis, lectus vitae pulvinar pellentesque, eros sapien posuere lacus, et eleifend risus
+                          nisi vel arcu. Sed porttitor eros lorem, ac pulvinar turpis scelerisque at. Praesent finibus nulla sit
+                          amet tortor varius, non elementum purus viverra. Suspendisse quis ipsum orci. Praesent gravida turpis
+                          felis, eu blandit magna egestas nec. Duis vulputate ornare nisi eu ultricies. Aliquam blandit luctus
+                          enim eget pharetra. Sed eleifend, tellus sed auctor condimentum, justo urna mollis enim, ut consectetur
+                          tortor orci et leo. In vitae magna in velit dapibus sollicitudin. Nam vitae dui convallis, tempor lacus
+                          et, placerat nibh. Vivamus vehicula, nunc lacinia venenatis tempor, purus magna euismod diam, a volutpat
+                          lacus ligula nec ante. Cras eget ultrices urna. Nullam at massa rhoncus, malesuada massa eu, vulputate
+                          quam. Ut vel rutrum justo. Donec quis lorem quam.
                       </p>
-                      <div>
-                           <iframe width="560" height="315" src="https://www.youtube.com/embed/IhTOKqwXgzQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                      </div>
                     </article>
                     <article>
                       <h1><i class="icon-estudios"></i>Estudios ofertados</h1>
-                      <p>DAW y ASIR son dos de los estudios ofertados</p>
-                      <p>En la asignatura de Diseño de Interfaces Web aprenderás cosas como esta: Dentro video!</p>
-                      <div>
-                        <video controls>
-
-                            <source src="formato.webm" type="video/webm">
-
-                            <source src="formato.ogg" type="video/ogg">
-
-                            <sourcesrc="formato.mp4" type="video/mp4">
-
-                          </video>
-
-                      </div>
+                      <p>DAW y ASIR son dos de los estudios ofertados en los que aprenderás...</p>
+                      <figure>
+                        <img src="css3.svg" alt="logo css3">
+                        <img src="html5.svg" alt="logo html5">
+                      </figure>
                   </article>
                   <article>
                     <h1><i class="icon-contactar"></i>Contactar</h1>
@@ -202,20 +232,12 @@
       <!--El ancho debe ocupar el 100% y es de color de fondo bg-dark y de color de texto text-white-->
       <footer class="w-100 bg-dark text-center">
         <p class="text-white">Diseño de interfaces web: Bootstrap &copy;</p>
-
-          <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
-
-           <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-
-           <a href="#"> <i class="fa fa-twitter-square fa-2x"></i></a>
-
-          <a href="#">  <i class="fa fa-instagram fa-2x"></i></a>
-
-
-
-
-
-
+        <ul>
+            <li><a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="http://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+        </ul>
       </footer>
     </div>
   </div>
