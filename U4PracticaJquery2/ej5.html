@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+
+      <script type="text/javascript">
+          $(document).ready(function(){
+            $('.primero').hide().fadeIn();
+
+            $(".segundo").click(function(){
+  			      $(this).animate({width:'200px',opacity: '2', fontSize:'26px'},"slow");
+  		            });
+
+
+          });
+
+      </script>
+      <style media="screen">
+           .primero{
+             border: 1px solid black;
+             background-color: violet;
+             width: 100px;
+             height: 100px;
+           }
+           .segundo{
+             background-color: lightblue;
+           }
+
+      </style>
+  </head>
+  <body>
+
+     <div class="primero"></div>
+
+     <div class="segundo">Esto es el segundo animate</div>
+
+  </body>
+</html>

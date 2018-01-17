@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script>
+ $(document).ready(function(){
+   $(document.getElementsByTagName('img')[0]).css("width","400px");
+   $(document.getElementsByTagName('h1')[0]).css("text-align", "center");
+   $(document.getElementsByClassName('contenedor')).css('text-align',"center");
+    //ocultar la imagen y los botones
+    $('img ,button').hide();
+    var count = true;
+
+    $('h1').on('click',function(){
+      if(count){
+        $('h1').html("Haz click para que haga desaparecer la imagen");
+         $('img , button').slideToggle();
+        count =  false;
+      }else{
+
+        $('img , button').slideToggle();
+        $('h1').html('Haz click aquí para desplegar la imagen!')
+           count = true;
+      }
+
+
+    });
+
+      $('#masAncho').on('click',(function(){
+        var foto = document.getElementsByTagName('img')[0].width;
+         $('img').css("width",foto+20);
+      }));
+
+
+
+      $('#menosAncho').on('click',(function(){
+        var foto = document.getElementsByTagName('img')[0].width;
+         $('img').css("width",foto-20);
+      }));
+
+ });
+
+
+
+</script>
+</head>
+<body>
+<h1>Haz click aquí para desplegar la imagen!</h1>
+<div class="contenedor">
+<img src="mundo.jpg">
+<button id="masAncho">+</button>
+<button id="menosAncho">-</button>
+</div>
+</body>
+</html>
