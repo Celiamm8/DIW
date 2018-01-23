@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='es'>
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="estilo.css">
@@ -28,6 +28,10 @@
           // cancela el evento normal del enlace (equivale a e.preventDefault());
           return false;
         }
+       document.getElementById('logo').addEventListener('click',function(){
+             window.open('nuevaPagina.html');
+         });
+
       }
     </script>
   </head>
@@ -38,7 +42,7 @@
         <p>Como en casa en ningún sitio!</p>
       </div>
       <div id="logo">
-        <img src="logo.png" width="85">
+        <img src="logo.png" width="85" alt="logotipo del sitio web">
       </div>
     </div>
 
@@ -54,29 +58,29 @@
 <div id="contenido">
 
 <div id="presentacion">
-  <h2>Bienvenido a la web de recetas.</h2>
+  <h1>Bienvenido a la web de recetas.</h1>
   <p>
     Esta es una web dedicada a las recetas que hemos tomado en casa toda la vida. Como decía mi abuela:
     <span>Aprofita nen! Com es menja a casa no es menja enlloc!</span>
   </p>
   <p>
-    Pulsa sobre el tipo de receta que te interese y ponte <b>manos a la obra!</b>
+    Pulsa sobre el tipo de receta que te interese y ponte <strong>manos a la obra!</strong>
   </p>
   <p>Bon Appetit!</p>
 
-  <h3><a href="#primeros" onclick="visualiza('primeros'); return false;">Entrantes y Primeros platos</a></h3>
+  <h2><a href="#primeros" onclick="visualiza('primeros'); return false;">Entrantes y Primeros platos</a></h2>
   Aperitivos, ensaladas, sopas y cremas.
 
-  <h3><a href="#segundos" onclick="visualiza('segundos'); return false;">Segundos: El plato fuerte!</a></h3>
+  <h2><a href="#segundos" onclick="visualiza('segundos'); return false;">Segundos: El plato fuerte!</a></h2>
   Pasta, arroces, carnes y pescados.
 
-  <h3><a href="#postres" onclick="visualiza('postres'); return false;">Deja hueco para los Postres</a></h3>
+  <h2><a href="#postres" onclick="visualiza('postres'); return false;">Deja hueco para los Postres</a></h2>
   Conoce las técnicas para cocinar los mejores postres caseros.
 </div>
 
 <div id="primeros">
 <p>Entrantes y Primeros platos</p>
-<h3>Aperitivos, ensaladas, sopas y cremas.</h3>
+<h2>Aperitivos, ensaladas, sopas y cremas.</h2>
 <ul>
 	<li><a href="#">Tortilla de la abuela</a></li>
   <li><a href="#">Sopa castellana</a></li>
@@ -89,7 +93,7 @@
 
 <div id="segundos">
 <p>Segundos: El plato fuerte!</p>
-<h3>Pasta, arroces, carnes y pescados.</h3>
+<h2>Pasta, arroces, carnes y pescados.</h2>
 <ul>
 	<li><a href="#">Redondo de ternera con salsa de pimienta</a></li>
   <li><a href="#">Merluza al vino</a></li>
@@ -102,7 +106,7 @@
 
 <div id="postres">
 <p>Deja hueco para los Postres</p>
-<h3>Conoce las técnicas para cocinar los mejores postres caseros.</h3>
+<h2>Conoce las técnicas para cocinar los mejores postres caseros.</h2>
 <ul>
 	<li><a href="#">Flan de café</a></li>
   <li><a href="#">Tarta a los 3 chocolates</a></li>
@@ -112,13 +116,13 @@
 </div>
 </div>
 <div id="lateral">
-  <h3>Síguenos</h3>
+  <h2>Síguenos</h2>
   <ul>
     <li><a href="#">Twitter</a></li>
     <li><a href="#">Youtube</a></li>
     <li><a href="#">Facebook</a></li>
   </ul>
-  <h3>Webs amigas</h3>
+  <h2>Webs amigas</h2>
   <ul>
     <li><a href="#">El cocinillas</a></li>
     <li><a href="#">Cocina para dummys</a></li>
