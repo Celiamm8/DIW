@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang='es'>
+<html lang="es">
   <head>
     <meta charset="utf-8">
+    <title>Las recetas de la abuela</title>
     <link rel="stylesheet" href="estilo.css">
     <script type="text/javascript">
       onload = function(){
@@ -9,9 +10,8 @@
         document.getElementById("primeros").style.display = "none";
         document.getElementById("segundos").style.display = "none";
         document.getElementById("postres").style.display = "none";
-
         //seleccionamos los enlaces del menú de navegación y asociamos la función de visualización
-        var enlaces = document.querySelectorAll("#navegacion a");
+        var enlaces = document.querySelectorAll("#navegacion a, h3 a");
         for (var i = 0; i < enlaces.length; i++) {
           enlaces[i].onclick = visualiza;
         }
@@ -28,10 +28,9 @@
           // cancela el evento normal del enlace (equivale a e.preventDefault());
           return false;
         }
-       document.getElementById('logo').addEventListener('click',function(){
-             window.open('nuevaPagina.html');
-         });
-
+        document.getElementById('logo').addEventListener('click',function(){
+              window.open('nuevaPagina.html');
+          });
       }
     </script>
   </head>
@@ -42,7 +41,7 @@
         <p>Como en casa en ningún sitio!</p>
       </div>
       <div id="logo">
-        <img src="logo.png" width="85" alt="logotipo del sitio web">
+        <img src="logo.png" alt="logotipo del sitio web">
       </div>
     </div>
 
@@ -68,23 +67,23 @@
   </p>
   <p>Bon Appetit!</p>
 
-  <h2><a href="#primeros" onclick="visualiza('primeros'); return false;">Entrantes y Primeros platos</a></h2>
+  <h2><a href="#primeros" class="primeros">Entrantes y Primeros platos</a></h2>
   Aperitivos, ensaladas, sopas y cremas.
 
-  <h2><a href="#segundos" onclick="visualiza('segundos'); return false;">Segundos: El plato fuerte!</a></h2>
+  <h2><a href="#segundos" class="segundos">Segundos: El plato fuerte!</a></h2>
   Pasta, arroces, carnes y pescados.
 
-  <h2><a href="#postres" onclick="visualiza('postres'); return false;">Deja hueco para los Postres</a></h2>
+  <h2><a href="#postres" class="postres">Deja hueco para los Postres</a></h2>
   Conoce las técnicas para cocinar los mejores postres caseros.
 </div>
 
 <div id="primeros">
 <p>Entrantes y Primeros platos</p>
-<h2>Aperitivos, ensaladas, sopas y cremas.</h2>
+<h3>Aperitivos, ensaladas, sopas y cremas.</h3>
 <ul>
 	<li><a href="#">Tortilla de la abuela</a></li>
   <li><a href="#">Sopa castellana</a></li>
-  <li><a href="#">Crema de calabaza</a></li>
+  <li><a href="ingredientes.html">Crema de calabaza</a></li>
   <li><a href="#">Champiñones rellenos</a></li>
   <li><a href="#">Ensalada de verano</a></li>
   <li><a href="#">Ensalada de encurtidos</a></li>
@@ -93,7 +92,7 @@
 
 <div id="segundos">
 <p>Segundos: El plato fuerte!</p>
-<h2>Pasta, arroces, carnes y pescados.</h2>
+<h3>Pasta, arroces, carnes y pescados.</h3>
 <ul>
 	<li><a href="#">Redondo de ternera con salsa de pimienta</a></li>
   <li><a href="#">Merluza al vino</a></li>
@@ -106,7 +105,7 @@
 
 <div id="postres">
 <p>Deja hueco para los Postres</p>
-<h2>Conoce las técnicas para cocinar los mejores postres caseros.</h2>
+<h3>Conoce las técnicas para cocinar los mejores postres caseros.</h3>
 <ul>
 	<li><a href="#">Flan de café</a></li>
   <li><a href="#">Tarta a los 3 chocolates</a></li>
@@ -116,13 +115,13 @@
 </div>
 </div>
 <div id="lateral">
-  <h2>Síguenos</h2>
+  <h3>Síguenos</h3>
   <ul>
     <li><a href="#">Twitter</a></li>
     <li><a href="#">Youtube</a></li>
     <li><a href="#">Facebook</a></li>
   </ul>
-  <h2>Webs amigas</h2>
+  <h3>Webs amigas</h3>
   <ul>
     <li><a href="#">El cocinillas</a></li>
     <li><a href="#">Cocina para dummys</a></li>
@@ -133,6 +132,9 @@
 <div id="pie">
 <ul>
   <!-- Aquí van los iconos de accesibilidad y la explicación sobre accesibilidad -->
+  <a href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2.0 Level Double-A Conformance">
+
+  <img height="32" src="http://www.w3.org/WAI/wcag2AA"alt="Level Double-A conformance,W3C WAI Web Content Accessibility Guidelines 2.0"></a>
 </ul>
 </div>
 </body>
